@@ -1,3 +1,6 @@
+// main.js是我们的入口文件，主要作用是初始化vue实例并使用需要的插件。
+// webpack打包在一起了，就像变量申明一样，在最前面申明下，下面就可以一直使用了
+// 用vue-cli建立的项目发现里面只在入口文件引入了Vue，各组件中并没有引入也能正常打包。
 import Vue from 'vue'
 // 把App.vue文件（组件）导入主文件main.js
 import App from './App'
