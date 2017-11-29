@@ -10,7 +10,17 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    //配置代理的
+    proxyTable: {
+      '/api/v1/**': {
+        // 你接口的域名,例如www.123.com/index.html需要调用www.456.com/server.php，
+        //可以写一个接口www.123.com/server.php，由这个接口在后端去调用www.456.com/server.php并拿到返回值，
+        //然后再返回给index.html，这就是一个代理的模式。相当于绕过了浏览器端，自然就不存在跨域问题。
+        target: 'https://cnodejs.org', 
+        secure: false,
+        changeOrigin: false,
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
