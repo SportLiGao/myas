@@ -19,7 +19,9 @@
 
      <!--<router-view></router-view> 主要是构建 SPA (单页应用) 时，方便渲染你指定路由对应的组件。
      你可以 router-view 当做是一个容器，它渲染的组件是你使用 vue-router 指定的。比如： -->
+     <img src="4.png" alt="插图">
     <router-view></router-view>
+
   </div>
 </template>
 
